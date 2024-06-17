@@ -92,7 +92,7 @@ class DetectionValidator(BaseValidator):
             self.args.iou,
             labels=self.lb,
             multi_label=True,
-            agnostic=self.args.single_cls,
+            agnostic= True,
             max_det=self.args.max_det,
         )
 
